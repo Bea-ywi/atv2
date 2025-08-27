@@ -24,7 +24,48 @@
       <h2>O que são tags no HTML?</h2>
       <p>Tags HTML são instruções que informam ao navegador como formatar o texto. Você pode usar tags para definir itálico, quebras de linha, objetos, bullet points e muito mais.
       <br>Essas tags estão presentes no HTML (Hypertext Markup Language) de todas as páginas da internet.</p>
+    </section>
 
+    <section id="conceitos" class="diferença">
+      <h2>Qual é a diferença entre elementos, atributos e tags HTML?</h2>
+      <p><b>Um elemento HTML</b>é um item da página — ele representa o próprio conteúdo</p>
+      <p><b>Uma tag HTML</b> define como esse elemento será exibido ou estruturado.</p>
+      <p><b>Um atributo HTML</b> adiciona informações extras que modificam ou detalham esse elemento.</p>
+      
+      <p>Veja como eles funcionam juntos:</p>
+      <table class="tabela-conceitos">
+        <tr>
+          <th>Conceito</th>
+          <th>Descrição</th>
+          <th>Exemplo</th>
+        </tr>
+        <tr>
+          <td>Tag</td>
+          <td>São os comandos que envolvem um elemento, começando com &lt; e terminando com &gt;.</td>
+          <td>&lt;b&gt;Texto em negrito&lt;/b&gt;</td>
+        </tr>
+        <tr>
+          <td>Elemento</td>
+          <td>É o conteúdo dentro dessas tags.</td>
+          <td>Texto em negrito no trecho acima.</td>
+        </tr>
+        <tr>
+          <td>Atributo</td>
+          <td>Dão características adicionais às tags, como idioma ou estilo.</td>
+          <td>&lt;html lang="pt-BR"&gt;</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="cascata" class="Regra">
+      <h2>Regra da Cascata</h2>
+      <p>A cascata determina qual regra CSS será aplicada quando houver mais de uma regra para o mesmo elemento.</p>
+      <p>A prioridade é definida por três fatores:</p>
+      <ol>
+        <li><b>Origem do estilo</b> (user-agent, usuário, desenvolvedor)</li>
+        <li><b>Especificidade</b> do seletor</li>
+        <li><b>Ordem de aparição</b> (a última regra sobrescreve as anteriores se tiver a mesma <a href="./pages/especificidade.html">especificidade</a>)</li>
+      </ol>
     </section>
   </main>
   

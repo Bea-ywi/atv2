@@ -11,6 +11,12 @@
 
   <nav>
     <ul>
+      <li><a href="#introdução">Introdução</a></li>
+      <li><a href="#conceitos">Elementos, Tags e Atributos</a></li>
+      <li><a href="#cascata">Regra da Cascata</a></li>
+      <li><a href="#display">Display Inline e Block</a></li>
+      <li><a href="#box-model">Margin, Padding e Border</a></li>
+      <li><a href="#border-box">Box-sizing</a></li>
 
     </ul>
   </nav>
@@ -66,6 +72,60 @@
         <li><b>Especificidade</b> do seletor</li>
         <li><b>Ordem de aparição</b> (a última regra sobrescreve as anteriores se tiver a mesma <a href="./pages/especificidade.html">especificidade</a>)</li>
       </ol>
+    </section>
+
+    <section id="display">
+      <h2>Diferenças entre display inline e display block</h2>
+      <ul>
+        <li><b>Block:</b> Ocupa toda a largura disponível, quebra linha antes e depois. Aceita width, height, margin, padding.</li>
+        <li><b>Inline:</b> Ocupa apenas o tamanho do conteúdo, não quebra linha. Não aceita width e height diretamente, mas aceita margin-left/right e padding-left/right.</li>
+      </ul>
+      <p><b>Elementos block por padrão:</b> div, p, h1–h6, section, article, header, footer, main, nav.</p>
+      <p><b>Elementos inline por padrão:</b> span, a, strong, em, img, label</p>
+    </section>
+
+    <section id="box-model">
+      <h2>Margin, Padding e Border</h2>
+
+      <div>
+        <h3>Margin</h3>
+        <p>A margin (margem) é o espaço externo de um elemento. Ela controla a distância <b>entre o elemento e outros elementos ao redor dele.</b></p>
+        <ul>
+          <li>Exemplo: se você definir margin: 20px;, o elemento ficará afastado 20px de outros elementos.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Padding</h3>
+        <p>O padding (preenchimento) é o espaço interno do elemento, <b>entre o conteúdo e a borda (border)</b>. Ele empurra o conteúdo para dentro, criando espaço interno.</p>
+        <ul>
+          <li>Exemplo: se você definir padding: 15px;, o texto dentro da caixa ficará afastado 15px da borda.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Border</h3>
+        <p>A border (borda) é a linha que envolve o elemento, <b>entre o padding e a margin.</b> Ela pode ter espessura, cor e estilo.</p>
+        <ul>
+          <li>Exemplo: border: 2px solid black; cria uma borda preta, sólida, de 2px de espessura.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Shorthand</h3>
+        <p>É uma forma abreviada de escrever várias propriedades relacionadas em uma única linha, em vez de defini-las separadamente. Isso torna o código mais limpo, curto e fácil de ler.</p>
+        <ul>
+          <li>margin: 10px; → aplica para todos os lados.</li>
+          <li>margin: 10px 20px; → 10px top/bottom e 20px left/right.</li>
+          <li>margin: 10px 20px 30px; → 10px top, 20px left/right, 30px bottom.</li>
+          <li>margin: 10px 20px 30px 40px; → top, right, bottom, left.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="border-box">
+      <h2>box-sizing: border-box</h2>
+      <p>Por padrão (content-box), o width inclui apenas o conteúdo. Com box-sizing: border-box, o width passa a incluir <b>conteúdo + padding + border</b>, facilitando o controle do layout.</p>
     </section>
   </main>
   

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="especificidade.css">
+    <title>O que é especificidade?</title>
+</head>
+<header>
+    <h1>O que é especificidade?</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Página principal</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <section id="introducao">
+        <p>A especificidade no CSS define <b>qual regra tem mais prioridade</b> quando várias estilizações tentam modificar o mesmo elemento. Em outras palavras, ela determina <b>qual estilo "vence" o conflito</b> e será aplicado.</p>
+    </section>
+
+    <section id="como-funciona">
+        <h2>Como funciona?</h2>
+        <p>Cada tipo de seletor possui um nível diferente de importância:</p>
+        <ul>
+            <li><b>Seletor por tag</b> (p, h1, div) → baixa especificidade.</li>
+            <li><b>Seletor por classe</b> (.meu-texto) → especificidade média.</li>
+            <li><b>Seletor por ID</b> (#titulo) → alta especificidade.</li>
+        </ul>
+    </section>
+
+    <section id="pontuacao">
+        <h2>Pontuação da especificidade</h2>
+        <p>A especificidade funciona como um sistema de pontos:</p>
+        <ul>
+            <li><b>Tag:</b> 1 ponto</li>
+            <li><b>Classe:</b> 10 pontos</li>
+            <li><b>ID:</b> 100 pontos</li>
+        </ul>
+    </section>
+
+    <section id="combinacao">
+        <h2>Combinação de seletores</h2>
+        <ul>
+            <li><b>Espaço (descendente):</b> .primeiro h1 → Seleciona todos os <b>h1</b> que estão dentro de .primeiro, não importa o nível.</li>
+            <li><b>Filho direto:</b> .primeiro > h1 → Seleciona apenas <b>h1</b> que são filhos diretos de .primeiro.</li>
+            <li><b>Irmão adjacente (soma):</b> .primeiro h1 + h1 → Seleciona apenas o <b>h1</b> que vem logo depois do primeiro <b>h1</b> dentro de .primeiro.</li>
+        </ul>
+    </section>
+
+    <section id="pseudo-classes">
+        <h2>Pseudo-classes</h2>
+        <ul>
+            <li>:first-child → Seleciona o primeiro filho de um elemento pai.</li>
+            <li>:last-child → Seleciona o último filho.</li>
+            <li>:nth-child(n) → Seleciona o filho pela ordem (ex.: nth-child(2) pega o segundo filho).</li>
+            <li>:nth-of-type(n) → Semelhante ao nth-child, mas considera apenas filhos de um tipo específico (ex.: só <b>p</b> ou só <b>li</b>).</li>
+        </ul>
+    </section>
+</main>
+<body>
+    
+</body>
+</html>
